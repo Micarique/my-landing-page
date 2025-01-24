@@ -14,5 +14,15 @@
     justify-content: center;
 
     cursor: pointer;
+
+    transition: 0.35s;
   }
+}
+
+.social:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+.social :hover {
+  transform: scale(1.02);
 }
