@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  padding: 40px 32px;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    'header'
+    'btns'
+    'experience'
+    'technologies'
+    'info'
+    'footer';
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+
+    grid-area: btns;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 70px 60px;
+    gap: 44px 100px;
+    height: 100vh;
+    align-items: center;
+    justify-items: start;
+    justify-content: space-between;
+    grid-template-rows: fit-content(100%);
+    grid-template-columns: 60% 30%;
+    grid-template-areas:
+      'header info'
+      'experience info '
+      'technologies btns'
+      'footer footer';
+  }
+}

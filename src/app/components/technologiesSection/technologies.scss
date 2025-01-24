@@ -1,0 +1,23 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  
+  grid-area: technologies;
+
+  .technologie-experience {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .35s;
+  }
+}
+
+.technologies:hover > :not( :hover) {
+  opacity: .4;
+}
+
+.technologies :hover {
+  transform: scale(1.02);
+}
