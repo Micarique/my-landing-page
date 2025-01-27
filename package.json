@@ -1,8 +1,11 @@
 {
   "name": "my-landing-page",
   "version": "0.1.0",
+  "homepage": "https://Micarique.github.io/my-landing-page",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -21,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
+    "gh-pages": "^6.3.0",
     "typescript": "^5"
   }
 }
