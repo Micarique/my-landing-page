@@ -9,7 +9,7 @@ export function Header() {
           <h2>Sofware Developer</h2>
         </div>
         <Image
-          src="/me.jpg"
+          src="./me.jpg"
           alt="Profile picture"
           width={280}
           height={300}
